@@ -1,0 +1,377 @@
+/* Pakistan Independence Day Website - Custom CSS with Bootstrap 5 */
+/* Pakistani Green & White Theme */
+
+:root {
+  /* Pakistani Green & White Color Palette */
+  --pakistani-green: #01411C;
+  --pakistani-green-light: #0D5F2F;
+  --pakistani-green-dark: #003015;
+  --pakistani-white: #FFFFFF;
+  --pakistani-cream: #F8F9FA;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--pakistani-green), var(--pakistani-green-light));
+  --gradient-hero: linear-gradient(180deg, var(--pakistani-green), var(--pakistani-green-light));
+  --gradient-card: linear-gradient(145deg, #ffffff, #f8f9fa);
+  
+  /* Shadows */
+  --shadow-elegant: 0 10px 30px -10px rgba(1, 65, 28, 0.2);
+  --shadow-card: 0 4px 20px -2px rgba(1, 65, 28, 0.1);
+  --shadow-hero: 0 20px 60px -10px rgba(1, 65, 28, 0.3);
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* Pakistani Theme Overrides */
+.bg-pakistani-green {
+  background: var(--gradient-primary) !important;
+}
+
+.text-pakistani-green {
+  color: var(--pakistani-green) !important;
+}
+
+.btn-pakistani {
+  background: var(--gradient-primary);
+  border: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-pakistani:hover {
+  background: var(--pakistani-green-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-elegant);
+  color: white;
+}
+
+.btn-outline-pakistani {
+  border: 2px solid var(--pakistani-green);
+  color: var(--pakistani-green);
+  background: transparent;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-pakistani:hover {
+  background: var(--pakistani-green);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Navbar Styles */
+.navbar-pakistani {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(1, 65, 28, 0.1);
+  box-shadow: var(--shadow-card);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--pakistani-green) !important;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #6c757d !important;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  background: var(--gradient-primary);
+  color: white !important;
+  transform: translateY(-1px);
+}
+
+/* Hero Section */
+.hero-section {
+  background: var(--gradient-hero);
+  color: white;
+  padding: 6rem 0 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.badge-developer {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
+/* Card Styles */
+.card-pakistani {
+  background: var(--gradient-card);
+  border: 1px solid rgba(1, 65, 28, 0.1);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card-pakistani:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-elegant);
+}
+
+.card-icon {
+  width: 4rem;
+  height: 4rem;
+  background: rgba(1, 65, 28, 0.1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--pakistani-green);
+  margin: 0 auto 1rem;
+}
+
+/* Timeline Styles */
+.timeline-item {
+  padding: 1.5rem;
+  border-left: 3px solid var(--pakistani-green);
+  margin-left: 1rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 2rem;
+  width: 12px;
+  height: 12px;
+  background: var(--pakistani-green);
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.timeline-year {
+  background: var(--pakistani-green);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* Badge Styles */
+.badge-pakistani {
+  background: var(--pakistani-green);
+  color: white;
+}
+
+.badge-outline-pakistani {
+  border: 1px solid var(--pakistani-green);
+  color: var(--pakistani-green);
+  background: transparent;
+}
+
+/* Gallery Styles */
+.gallery-carousel {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-hero);
+}
+
+.carousel-item img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3rem 2rem 2rem;
+}
+
+.landmark-grid .card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.landmark-grid .card:hover {
+  transform: scale(1.02);
+}
+
+.landmark-grid .card img {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.landmark-grid .card:hover img {
+  transform: scale(1.1);
+}
+
+/* Stats Section */
+.stats-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  display: block;
+}
+
+.stats-label {
+  font-size: 0.875rem;
+  opacity: 0.9;
+  color: white;
+}
+
+/* Footer */
+.footer-pakistani {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 3rem 0 2rem;
+  margin-top: auto;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.1rem;
+  }
+  
+  .card-pakistani {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Utility Classes */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.bg-pattern {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.section-padding {
+  padding: 4rem 0;
+}
+
+.section-padding-lg {
+  padding: 6rem 0;
+}
+
+/* Loading Animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom Bootstrap Badge Colors */
+.bg-success-custom {
+  background-color: var(--pakistani-green) !important;
+}
+
+.text-success-custom {
+  color: var(--pakistani-green) !important;
+}

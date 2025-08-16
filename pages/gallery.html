@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Gallery - Iconic Landmarks</title>
+    <meta name="description" content="Explore Pakistan's beautiful landmarks and iconic monuments through our photo gallery">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-pakistani">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-flag text-pakistani-green me-2"></i>
+                Pakistan
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+                    <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="economy.html">Economy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cities.html">Cities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row justify-content-center text-center hero-content">
+                <div class="col-lg-10">
+                    <h1 class="animate-fade-in">Pakistan's Iconic Landmarks</h1>
+                    <p class="lead animate-fade-in">Exploring the architectural wonders and historical sites that define our nation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Carousel -->
+    <section class="section-padding">
+        <div class="container">
+            <div id="landmarkCarousel" class="carousel slide gallery-carousel mb-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/images/minar-e-pakistan.jpg" class="d-block w-100" alt="Minar-e-Pakistan">
+                        <div class="carousel-caption">
+                            <h3>Minar-e-Pakistan</h3>
+                            <p>National monument marking where the Pakistan Resolution was passed in 1940</p>
+                            <span class="badge badge-pakistani me-2"><i class="fas fa-map-marker-alt me-1"></i>Lahore, Punjab</span>
+                            <span class="badge badge-pakistani"><i class="fas fa-calendar me-1"></i>1968</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/faisal-mosque.jpg" class="d-block w-100" alt="Faisal Mosque">
+                        <div class="carousel-caption">
+                            <h3>Faisal Mosque</h3>
+                            <p>One of the largest mosques in the world with modern Islamic architecture</p>
+                            <span class="badge badge-pakistani me-2"><i class="fas fa-map-marker-alt me-1"></i>Islamabad</span>
+                            <span class="badge badge-pakistani"><i class="fas fa-calendar me-1"></i>1986</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/badshahi-mosque.jpg" class="d-block w-100" alt="Badshahi Mosque">
+                        <div class="carousel-caption">
+                            <h3>Badshahi Mosque</h3>
+                            <p>Historic Mughal architecture commissioned by Emperor Aurangzeb</p>
+                            <span class="badge badge-pakistani me-2"><i class="fas fa-map-marker-alt me-1"></i>Lahore, Punjab</span>
+                            <span class="badge badge-pakistani"><i class="fas fa-calendar me-1"></i>1673</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/pakistan-monument.jpg" class="d-block w-100" alt="Pakistan Monument">
+                        <div class="carousel-caption">
+                            <h3>Pakistan Monument</h3>
+                            <p>Modern symbol representing four provinces and three territories</p>
+                            <span class="badge badge-pakistani me-2"><i class="fas fa-map-marker-alt me-1"></i>Islamabad</span>
+                            <span class="badge badge-pakistani"><i class="fas fa-calendar me-1"></i>2007</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#landmarkCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#landmarkCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- Landmarks Grid -->
+            <div class="row landmark-grid g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-pakistani">
+                        <img src="../assets/images/minar-e-pakistan.jpg" class="card-img-top" alt="Minar-e-Pakistan">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Minar-e-Pakistan</h6>
+                            <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>Lahore, Punjab</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-pakistani">
+                        <img src="../assets/images/faisal-mosque.jpg" class="card-img-top" alt="Faisal Mosque">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Faisal Mosque</h6>
+                            <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>Islamabad</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-pakistani">
+                        <img src="../assets/images/badshahi-mosque.jpg" class="card-img-top" alt="Badshahi Mosque">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Badshahi Mosque</h6>
+                            <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>Lahore, Punjab</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card card-pakistani">
+                        <img src="../assets/images/pakistan-monument.jpg" class="card-img-top" alt="Pakistan Monument">
+                        <div class="card-body">
+                            <h6 class="card-title fw-bold">Pakistan Monument</h6>
+                            <small class="text-muted"><i class="fas fa-map-marker-alt me-1"></i>Islamabad</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-pakistani">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">© 2025 Pakistan | Developed by <strong>Junaid Ahmed</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
